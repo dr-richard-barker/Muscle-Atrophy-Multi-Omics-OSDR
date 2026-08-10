@@ -1,0 +1,4 @@
+compound,lincs_available,lincs_reversal_z,lincs_perm_p,best_vina_affinity,best_boltz2_confidence,n_studies,n_strong_evidence,n_microgravity_studies,meta_analysis_targets
+Resveratrol,True,-0.1052608137133648,0.935,-8.556,0.877,10,8,5,SIRT1(+0.02); FOXO3(+0.22); PPARGC1A(-0.51); PRKAA2(-0.21)
+HMB,False,,,-5.233,,8,4,1,MTOR(+0.02); FBXO32(+0.30); TRIM63(-0.20); FOXO3(+0.22)
+CoQ10,True,-0.835666794220231,0.485,,0.806,6,1,1,MT-ND1(+1.48); MT-CO1(+1.17); MT-ND4(+1.39); MT-CYB(+1.28)

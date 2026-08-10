@@ -1,0 +1,156 @@
+signature,compound,overlap_genes,signature_size,query_size,p_value,direction,overlapping_genes
+Ethanol-dn,Ethanol,1,240,77,0.7031057270267614,drug_down_reverses_query_up,SYNE1
+Sodium arsenite-dn,Sodium,1,284,77,0.762860778860476,drug_down_reverses_query_up,INMT
+Vitamin c-dn,Vitamin,1,322,77,0.8047981209782578,drug_down_reverses_query_up,FAT1
+Perfluorooctanoic acid-dn,Perfluorooctanoic,2,373,77,0.5607567462787902,drug_down_reverses_query_up,"FAT1,INMT"
+Vitamin e-up,Vitamin,1,258,64,0.6621782076877023,drug_up_reverses_query_down,MYL3
+Gefitinib-dn,Gefitinib,2,483,77,0.7012488400236921,drug_down_reverses_query_up,"FZD8,WASH2P"
+Methylprednisolone-up,Methylprednisolone,1,319,64,0.7393394069676127,drug_up_reverses_query_down,CAV3
+Methylprednisolone-dn,Methylprednisolone,1,272,77,0.7478555548872572,drug_down_reverses_query_up,MMP14
+Pristane-up,Pristane,1,312,64,0.7314523857054014,drug_up_reverses_query_down,GFPT2
+Methoxychlor-dn,Methoxychlor,1,319,77,0.801772296405661,drug_down_reverses_query_up,FAT1
+Leptin-up,Leptin,1,190,64,0.5495078736124479,drug_up_reverses_query_down,OLFM4
+Leptin-dn,Leptin,4,406,77,0.14605280267390847,drug_down_reverses_query_up,"FAT1,INMT,KCNK1,PRODH"
+Morphine-dn,Morphine,1,432,77,0.8891817055498156,drug_down_reverses_query_up,WDR83OS
+Mycophenolic acid-up,Mycophenolic,1,307,64,0.7256754384970835,drug_up_reverses_query_down,DEFA1B
+Acetaminophen-up,Acetaminophen,1,230,64,0.6196125671212753,drug_up_reverses_query_down,AK3
+Acetaminophen-dn,Acetaminophen,3,364,77,0.27477801507883004,drug_down_reverses_query_up,"CBS,INMT,PRODH"
+Cisplatin-up,Cisplatin,1,468,64,0.8622561184475902,drug_up_reverses_query_down,MCFD2
+Metoprolol-dn,Metoprolol,2,358,77,0.5383876746988717,drug_down_reverses_query_up,"CBWD2,KIAA1324L"
+Methotrexate-up,Methotrexate,2,314,64,0.3769742146930742,drug_up_reverses_query_down,"DEFA1B,NUAK2"
+Imatinib-dn,Imatinib,1,340,77,0.8220189317843956,drug_down_reverses_query_up,WDR83OS
+Estradiol-up,Estradiol,1,332,64,0.753386442680322,drug_up_reverses_query_down,OLFM4
+Hydroxyzine-up,Hydroxyzine,1,220,64,0.6031653082587748,drug_up_reverses_query_down,DEFA1B
+Ribavirin-dn,Ribavirin,1,378,77,0.8536008920049003,drug_down_reverses_query_up,WDR83OS
+Bleomycin-dn,Bleomycin,1,312,77,0.794530833496213,drug_down_reverses_query_up,INMT
+Diclofenac-dn,Diclofenac,1,339,77,0.8211028527568154,drug_down_reverses_query_up,COLGALT1
+Chromium(iii) nicotinate-dn,Chromium(iii),2,338,77,0.5073937134899407,drug_down_reverses_query_up,"INMT,PFDN6"
+Curcumin-dn,Curcumin,1,562,77,0.9435472956806156,drug_down_reverses_query_up,PNN
+Cetuximab-up,Cetuximab,1,302,64,0.7197762014484081,drug_up_reverses_query_down,BCYRN1
+Bisphenol a-dn,Bisphenol,1,424,77,0.8845073929325921,drug_down_reverses_query_up,WDR83OS
+Harman-up,Harman,1,306,64,0.7245054550280587,drug_up_reverses_query_down,AK3
+Harman-dn,Harman,1,287,77,0.7664722116078229,drug_down_reverses_query_up,WDR83OS
+Aminolevulinic acid-up,Aminolevulinic,2,279,64,0.3239788187636788,drug_up_reverses_query_down,"ARHGEF6,PTPN3"
+Pimecrolimus-up,Pimecrolimus,1,336,64,0.7575567137487553,drug_up_reverses_query_down,LY6G6C
+Doxycycline-dn,Doxycycline,1,191,77,0.6189720874106128,drug_down_reverses_query_up,PFDN6
+Deferasirox-up,Deferasirox,1,256,64,0.6592999839637734,drug_up_reverses_query_down,HBQ1
+Vanadium pentoxide-dn,Vanadium,1,242,77,0.7061188693921339,drug_down_reverses_query_up,WDR83OS
+Palmitic acid-up,Palmitic,1,294,64,0.7100766830929284,drug_up_reverses_query_down,MCFD2
+Pd173074-up,Pd173074,1,269,64,0.6775857568722061,drug_up_reverses_query_down,OLFM4
+Caerulein-up,Caerulein,1,267,64,0.6748367919126399,drug_up_reverses_query_down,MCFD2
+Caerulein-dn,Caerulein,1,330,77,0.8126459074230011,drug_down_reverses_query_up,CBS
+Sodium butyrate-dn,Sodium,1,309,77,0.7913479914612083,drug_down_reverses_query_up,MMP14
+Bexarotene-dn,Bexarotene,1,267,77,0.7413302471931138,drug_down_reverses_query_up,FAT1
+Atorvastatin-up,Atorvastatin,2,283,64,0.3300999918109886,drug_up_reverses_query_down,"DEFA1B,HBD"
+Insulin-up,Insulin,1,259,64,0.6636083303698023,drug_up_reverses_query_down,MYL3
+Concanavalin a-dn,Concanavalin,2,392,77,0.5879887507754566,drug_down_reverses_query_up,"INMT,PRODH"
+Vemurafenib-dn,Vemurafenib,1,280,77,0.7579596603544774,drug_down_reverses_query_up,COLGALT1
+Fenretinide-up,Fenretinide,2,175,64,0.16497513057288618,drug_up_reverses_query_down,"DEFA1B,HBD"
+N-nitrosodimethylamine-dn,N,1,322,77,0.8047981209782578,drug_down_reverses_query_up,CBS
+1-naphthyl isothiocyanate-dn,1,1,317,77,0.7997294091149546,drug_down_reverses_query_up,CBS
+Glipizide-up,Glipizide,1,337,64,0.7585883873072713,drug_up_reverses_query_down,MCFD2
+Glipizide-dn,Glipizide,1,258,77,0.7291619913019356,drug_down_reverses_query_up,INMT
+Cyclophosphamide-dn,Cyclophosphamide,1,236,77,0.6969876731134679,drug_down_reverses_query_up,NPC1
+Folic acid-dn,Folic,2,339,77,0.5089745034159371,drug_down_reverses_query_up,"COLGALT1,WDR83OS"
+Metformin-up,Metformin,1,327,64,0.7480741949003822,drug_up_reverses_query_down,MCFD2
+Irinotecan-up,Irinotecan,1,260,64,0.6650324930248488,drug_up_reverses_query_down,AK3
+Irinotecan-dn,Irinotecan,1,340,77,0.8220189317843956,drug_down_reverses_query_up,PFDN6
+Colchicine-up,Colchicine,1,340,64,0.7616575484298956,drug_up_reverses_query_down,GFPT2
+Bpde-up,Bpde,1,363,64,0.783945823565445,drug_up_reverses_query_down,AK3
+Cytarabine-dn,Cytarabine,1,323,77,0.8057965628996524,drug_down_reverses_query_up,PNN
+Dapt-dn,Dapt,2,273,77,0.39821881902647144,drug_down_reverses_query_up,"FZD8,RASL11B"
+"Puromycin, 2xec50, 1d-up","Puromycin,",1,247,64,0.6460464049764312,drug_up_reverses_query_down,TSPYL5
+"Puromycin, 2xec50, 1d-dn","Puromycin,",1,353,77,0.8335148918274067,drug_down_reverses_query_up,CBS
+Cobalt dichloride hexahydrate-dn,Cobalt,2,305,77,0.45347465845492774,drug_down_reverses_query_up,"CBS,RASL11B"
+Acrylamide-dn,Acrylamide,2,403,77,0.6031861739509987,drug_down_reverses_query_up,"FAT1,MMP14"
+Olanzapine-dn,Olanzapine,1,398,77,0.8679307729988543,drug_down_reverses_query_up,RASL11B
+N-methylformamide-dn,N,1,304,77,0.7859347726671697,drug_down_reverses_query_up,CBS
+Cyfluthrin-dn,Cyfluthrin,2,204,77,0.2722386591253736,drug_down_reverses_query_up,"ADAMTS16,FAT1"
+Ethinyl estradiol-dn,Ethinyl,2,354,77,0.5322946478522169,drug_down_reverses_query_up,"INMT,MMP14"
+Hydrogen peroxide-up,Hydrogen,1,371,64,0.7912067495620241,drug_up_reverses_query_down,CAV3
+Hydrogen peroxide-dn,Hydrogen,1,226,77,0.6811428015527907,drug_down_reverses_query_up,MMP14
+Quercetin-dn,Quercetin,1,464,77,0.9060830151101948,drug_down_reverses_query_up,INMT
+Streptozocin-dn,Streptozocin,1,361,77,0.8402217329549948,drug_down_reverses_query_up,INMT
+Medroxyprogesterone acetate-dn,Medroxyprogesterone,2,248,77,0.3533803653019545,drug_down_reverses_query_up,"FAT1,RASL11B"
+Pioglitazone-up,Pioglitazone,1,282,64,0.6949046308730638,drug_up_reverses_query_down,MCFD2
+Dasatinib-dn,Dasatinib,1,293,77,0.7735329960557833,drug_down_reverses_query_up,CBS
+Cholestyramine-up,Cholestyramine,1,464,64,0.8598655817709953,drug_up_reverses_query_down,OLFM4
+Insulin regular-dn,Insulin,1,214,77,0.6610465847616261,drug_down_reverses_query_up,INMT
+Cyclosporine-up,Cyclosporine,1,296,64,0.7125321049034138,drug_up_reverses_query_down,MYL3
+Interferon beta-1b-dn,Interferon,1,344,77,0.8256371747633411,drug_down_reverses_query_up,WDR83OS
+Simvastatin-dn,Simvastatin,2,385,77,0.5781002346688953,drug_down_reverses_query_up,"INMT,RASL11B"
+Mepenzolate bromide-dn,Mepenzolate,1,264,77,0.7373353507940129,drug_down_reverses_query_up,INMT
+Arc (nsc 188491)-up,Arc,1,410,64,0.8233037215618676,drug_up_reverses_query_down,TSPYL5
+Lubiprostone-dn,Lubiprostone,1,224,77,0.6778770601110435,drug_down_reverses_query_up,FAT1
+Trastuzumab-dn,Trastuzumab,1,276,77,0.75295858938055,drug_down_reverses_query_up,FAT1
+Motexafin gadolinium (4 h)-dn,Motexafin,1,361,77,0.8402217329549948,drug_down_reverses_query_up,STX10
+Pertuzumab-dn,Pertuzumab,2,271,77,0.39468014393319656,drug_down_reverses_query_up,"FAT1,PNN"
+Tamoxifen-dn,Tamoxifen,1,227,77,0.6827633958947337,drug_down_reverses_query_up,KCNK1
+Mepenzolate-dn,Mepenzolate,1,317,77,0.7997294091149546,drug_down_reverses_query_up,INMT
+Heroin-dn,Heroin,1,328,77,0.8107136585973145,drug_down_reverses_query_up,RASL11B
+Phenol-up,Phenol,1,226,64,0.6131157873978236,drug_up_reverses_query_down,PTPN3
+Nilotinib-up,Nilotinib,2,201,64,0.2038985053870799,drug_up_reverses_query_down,"HBD,HBQ1"
+Amoxicillin-dn,Amoxicillin,2,273,77,0.39821881902647144,drug_down_reverses_query_up,"FAT1,MMP14"
+Dactinomycin-dn,Dactinomycin,1,315,77,0.7976657445177758,drug_down_reverses_query_up,SHB
+Natural alpha interferon-dn,Natural,1,299,77,0.7803829850706834,drug_down_reverses_query_up,PNN
+Menadione-up,Menadione,2,445,64,0.5566688135522899,drug_up_reverses_query_down,"MCFD2,NAALAD2"
+Ascorbic acid-dn,Ascorbic,1,139,77,0.5039070726857036,drug_down_reverses_query_up,FAT1
+Azathioprine-up,Azathioprine,1,317,64,0.7371095386977359,drug_up_reverses_query_down,OLFM4
+Isoflurane-dn,Isoflurane,1,302,77,0.7837308799160304,drug_down_reverses_query_up,CBS
+Propofol-up,Propofol,1,228,64,0.6163777152914345,drug_up_reverses_query_down,GFPT2
+"Puromycin, 2xec50, 3 d-up","Puromycin,",1,263,64,0.6692694647920895,drug_up_reverses_query_down,TSPYL5
+"Puromycin, 2xec50, 3 d-dn","Puromycin,",1,336,77,0.8183266008529303,drug_down_reverses_query_up,CBS
+Fasudil-up,Fasudil,1,242,64,0.6384653448300561,drug_up_reverses_query_down,AK3
+Fasudil-dn,Fasudil,1,358,77,0.8377385112296644,drug_down_reverses_query_up,RASL11B
+Sevoflurane-up,Sevoflurane,1,267,64,0.6748367919126399,drug_up_reverses_query_down,GFPT2
+Sevoflurane-dn,Sevoflurane,1,330,77,0.8126459074230011,drug_down_reverses_query_up,INMT
+Cadmium chloride-up,Cadmium,1,562,64,0.9081904639894244,drug_up_reverses_query_down,LY6G6C
+Androstanolone-dn,Androstanolone,1,381,77,0.8558443311210548,drug_down_reverses_query_up,WDR83OS
+Imatinib (glivec)-up,Imatinib,2,321,64,0.38738954448235674,drug_up_reverses_query_down,"ARHGEF6,DEFA1B"
+Mek inhibitor (meki : azd6244)-up,Mek,2,373,64,0.4622021167321848,drug_up_reverses_query_down,"NUAK2,STRADB"
+Angiotensin ii-dn,Angiotensin,2,475,77,0.6924098296781922,drug_down_reverses_query_up,"RASL11B,SHB"
+Nitric oxide-up,Nitric,1,328,64,0.7491455784824391,drug_up_reverses_query_down,DEFA1B
+Trichostatin a-up,Trichostatin,1,582,64,0.9158106410725371,drug_up_reverses_query_down,NAALAD2
+Anastrozole-up,Anastrozole,1,184,64,0.5379492976386424,drug_up_reverses_query_down,STRADB
+Anastrozole-dn,Anastrozole,1,411,77,0.8764932787724573,drug_down_reverses_query_up,FAT1
+4-hydroxynonenal-dn,4,1,217,77,0.6661848506841446,drug_down_reverses_query_up,COLGALT1
+Carboplatin-up,Carboplatin,1,252,64,0.6534709295359118,drug_up_reverses_query_down,BCYRN1
+Nvp-tnks656 (tankyrase inhibitor)-up,Nvp,1,455,64,0.8543365494659338,drug_up_reverses_query_down,NUAK2
+Fgfr-specific pd173074 inhibitor-up,Fgfr,1,204,64,0.5753824709826392,drug_up_reverses_query_down,OLFM4
+Fgfr-specific pd173074 inhibitor-dn,Fgfr,1,387,77,0.8602298990134365,drug_down_reverses_query_up,PFDN6
+Vitamin a-up,Vitamin,1,353,64,0.7745193466534341,drug_up_reverses_query_down,AK3
+Trovafloxacin-dn,Trovafloxacin,1,157,77,0.5471690771946388,drug_down_reverses_query_up,FAT1
+Levofloxacin-dn,Levofloxacin,2,330,77,0.4946320468764707,drug_down_reverses_query_up,"MMP14,WDR83OS"
+Colistin-up,Colistin,1,309,64,0.728000751271827,drug_up_reverses_query_down,NUAK2
+Colistin-dn,Colistin,1,291,77,0.7712031350683493,drug_down_reverses_query_up,INMT
+Phorbol ester 12-o-tetradecanoylphorbol-13-acetate (tpa)-up,Phorbol,2,163,64,0.1475169755298753,drug_up_reverses_query_down,"KPRP,LY6G6C"
+Cocaine-up,Cocaine,3,285,64,0.11552394105964307,drug_up_reverses_query_down,"ARHGEF6,BCYRN1,MAP6D1"
+"3,3',4,4'-tetrachlorobiphenyl-dn","3,3',4,4'",1,321,77,0.8037946128540305,drug_down_reverses_query_up,PNN
+"Puromycin, ec50, 5 d-dn","Puromycin,",1,493,77,0.9191870978089625,drug_down_reverses_query_up,CBS
+Sirolimus-up,Sirolimus,1,431,64,0.8385208746330142,drug_up_reverses_query_down,ARHGEF6
+Laminin-dn,Laminin,1,272,77,0.7478555548872572,drug_down_reverses_query_up,PNN
+Formoterol-up,Formoterol,1,400,64,0.8155696588969694,drug_up_reverses_query_down,GFPT2
+Formoterol-dn,Formoterol,1,200,77,0.6360169489238072,drug_down_reverses_query_up,MMP14
+"Puromycin, ec50, 1 d-dn","Puromycin,",1,364,77,0.842667437962807,drug_down_reverses_query_up,CBS
+"Puromycin, ec50, 3 d-up","Puromycin,",1,263,64,0.6692694647920895,drug_up_reverses_query_down,TSPYL5
+"Puromycin, ec50, 3 d-dn","Puromycin,",1,334,77,0.8164521858513573,drug_down_reverses_query_up,CBS
+Sb 216763-dn,Sb,1,284,77,0.762860778860476,drug_down_reverses_query_up,COLGALT1
+Triiodothyronine-[13c6] hydrochloride (t3 thyronine)-dn,Triiodothyronine,1,217,77,0.6661848506841446,drug_down_reverses_query_up,FAT1
+Mk-886-dn,Mk,1,322,77,0.8047981209782578,drug_down_reverses_query_up,WDR83OS
+1-[3-(trifluoromethyl)phenyl]piperazine-dn,1,1,342,77,0.8238372218747634,drug_down_reverses_query_up,EIF4EBP3
+1-(4-methoxyphenyl)piperazine-dn,1,1,310,77,0.7924143088872043,drug_down_reverses_query_up,EIF4EBP3
+Hydrocortisone-dn,Hydrocortisone,1,243,77,0.707614101786531,drug_down_reverses_query_up,FAT1
+1-benzylpiperazine-dn,1,1,283,77,0.7616447612773818,drug_down_reverses_query_up,EIF4EBP3
+Sapphyrin pci-2050 (2.5 &icirc;&frac14;m)-dn,Sapphyrin,1,341,77,0.822930380457753,drug_down_reverses_query_up,PNN
+Carboplatin (30 h)-up,Carboplatin,1,300,64,0.7173816967411601,drug_up_reverses_query_down,NUAK2
+Carboplatin (36 h)-up,Carboplatin,1,286,64,0.70004685471137,drug_up_reverses_query_down,NUAK2
+1-piperonylpiperazine-dn,1,1,266,77,0.7400053239598182,drug_down_reverses_query_up,EIF4EBP3
+Capsaicin-up,Capsaicin,1,298,64,0.7149670534466899,drug_up_reverses_query_down,HBA1
+Antimony-up,Antimony,1,355,64,0.7764364739377346,drug_up_reverses_query_down,HBQ1
+"1,2,4-benzenetriol-up","1,2,4",1,284,64,0.6974864980348328,drug_up_reverses_query_down,HBD
+Testosterone-up,Testosterone,1,244,64,0.6415167594884883,drug_up_reverses_query_down,MYL3
+Tibolone-up,Tibolone,1,268,64,0.6762141461596176,drug_up_reverses_query_down,OLFM4
+Creatine-up,Creatine,1,292,64,0.7076006186291472,drug_up_reverses_query_down,RASL10B
+Creatine-dn,Creatine,1,304,77,0.7859347726671697,drug_down_reverses_query_up,FAT1
+Y15-dn,Y15,1,407,77,0.8739187412242514,drug_down_reverses_query_up,NPC1
+Temozolomide-dn,Temozolomide,1,311,77,0.7934752473058746,drug_down_reverses_query_up,NPC1

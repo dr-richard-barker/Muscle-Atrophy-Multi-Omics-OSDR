@@ -1,0 +1,16 @@
+target,pdb_id,compound,best_affinity_kcal_mol,all_affinities,output_file,log_file,exhaustiveness,error,method,boltz2_confidence,boltz2_ligand_iptm,boltz2_validation
+SIRT1,4I5I,Resveratrol,-8.556,-8.56|-8.55|-8.48|-8.35|-8.31,/workspace/docking_run/scores/sirt1_Resveratrol_out.pdbqt,/workspace/docking_run/scores/sirt1_Resveratrol_log.txt,32,,AutoDock Vina,0.877,0.94,"High confidence (0.877), consistent with Vina -8.6 kcal/mol"
+SIRT1,4I5I,Creatine,-5.212,-5.21|-5.08|-5.05|-5.05|-5.02,/workspace/docking_run/scores/sirt1_Creatine_out.pdbqt,/workspace/docking_run/scores/sirt1_Creatine_log.txt,32,,AutoDock Vina,,,
+SIRT1,4I5I,HMB,-5.233,-5.23|-4.97|-4.77|-4.59|-4.59,/workspace/docking_run/scores/sirt1_HMB_out.pdbqt,/workspace/docking_run/scores/sirt1_HMB_log.txt,32,,AutoDock Vina,,,
+SIRT1,4I5I,CoQ10,,,,/workspace/docking_run/scores/sirt1_CoQ10_log.txt,8,CoQ10_too_large_for_Vina_Boltz2_used,Boltz-2,0.806,0.866,
+MTOR,4JSN,Resveratrol,-6.236,-6.24|-6.20|-6.05|-6.03|-6.03,/workspace/docking_run/scores/mtor_Resveratrol_out.pdbqt,/workspace/docking_run/scores/mtor_Resveratrol_log.txt,32,,AutoDock Vina,,,
+MTOR,4JSN,Creatine,-4.284,-4.28|-4.21|-4.19|-4.13|-4.05,/workspace/docking_run/scores/mtor_Creatine_out.pdbqt,/workspace/docking_run/scores/mtor_Creatine_log.txt,32,,AutoDock Vina,,,
+MTOR,4JSN,HMB,-4.506,-4.51|-4.23|-3.91|-3.90|-3.89,/workspace/docking_run/scores/mtor_HMB_out.pdbqt,/workspace/docking_run/scores/mtor_HMB_log.txt,32,,AutoDock Vina,,,
+MTOR,4JSN,CoQ10,,,,/workspace/docking_run/scores/mtor_CoQ10_log.txt,8,CoQ10_too_large_for_Vina_Boltz2_used,Boltz-2,0.7701491713523865,0.7179009914398193,
+CKM,1CRK,Resveratrol,-6.011,-6.01|-5.97|-5.84|-5.84|-5.84,/workspace/docking_run/scores/ckm_Resveratrol_out.pdbqt,/workspace/docking_run/scores/ckm_Resveratrol_log.txt,32,,AutoDock Vina,,,
+CKM,1CRK,Creatine,-4.712,-4.71|-4.31|-4.28|-4.28|-4.06,/workspace/docking_run/scores/ckm_Creatine_out.pdbqt,/workspace/docking_run/scores/ckm_Creatine_log.txt,32,,AutoDock Vina,,,
+CKM,1CRK,HMB,-4.33,-4.33|-4.26|-4.02|-3.96|-3.94,/workspace/docking_run/scores/ckm_HMB_out.pdbqt,/workspace/docking_run/scores/ckm_HMB_log.txt,32,,AutoDock Vina,,,
+CKM,1CRK,CoQ10,,,,/workspace/docking_run/scores/ckm_CoQ10_log.txt,8,CoQ10_too_large_for_Vina,N/A (too large for Vina),,,
+FOXO3,2UZK,Resveratrol,-5.311,-5.31|-5.31|-4.84|-4.82|-4.77,/workspace/docking_run/scores/foxo3_correct_Resveratrol_out.pdbqt,/workspace/docking_run/scores/foxo3_correct_Resveratrol_log.txt,32,,AutoDock Vina,,,
+FOXO3,2UZK,Creatine,-3.942,-3.94|-3.66|-3.59|-3.43|-3.38,/workspace/docking_run/scores/foxo3_correct_Creatine_out.pdbqt,/workspace/docking_run/scores/foxo3_correct_Creatine_log.txt,32,,AutoDock Vina,,,
+FOXO3,2UZK,HMB,-3.388,-3.39|-3.32|-3.26|-3.26|-3.20,/workspace/docking_run/scores/foxo3_correct_HMB_out.pdbqt,/workspace/docking_run/scores/foxo3_correct_HMB_log.txt,32,,AutoDock Vina,,,

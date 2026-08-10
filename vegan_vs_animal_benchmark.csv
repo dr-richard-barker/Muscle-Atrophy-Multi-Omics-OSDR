@@ -1,0 +1,11 @@
+metric,vegan_top10,animal_top10
+Mean leucine/100g protein,8.615864537255703,9.680420598622586
+Mean BCAA/100g protein,17.779611503083437,21.602914407467434
+Mean lysine/100g protein,6.034069236889875,8.724952796828699
+Mean grams for 2.5g leucine,150.42753795342406,191.0155664818776
+Mean kcal for 2.5g leucine,301.8691721236629,181.46969008374566
+Mean MPS score,0.361863992372996,1.2357375046575068
+Best MPS rank (vegan),7.0,7.0
+Best MPS rank (animal),1.0,1.0
+Sources in top 10,3.0,7.0
+Sources in top 20,4.0,16.0

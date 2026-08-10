@@ -1,0 +1,88 @@
+{
+  "engine": "ilincs_api + local_gmt",
+  "ilincs_api": {
+    "url": "https://www.ilincs.org/api/ilincsR/findConcordancesSC",
+    "mode": "geneList",
+    "up_gene_query": {
+      "genes_used": 48,
+      "signatures_returned": 9258,
+      "unique_compounds": 2901,
+      "z_score_range": [
+        2.3301,
+        6.501
+      ]
+    },
+    "down_anti_atrophy_gene_query": {
+      "genes_used": 48,
+      "signatures_returned": 624,
+      "unique_compounds": 559,
+      "z_score_range": [
+        2.3308,
+        7.8469
+      ]
+    }
+  },
+  "local_gmt_fallback": {
+    "gmt_file": "single_drug_perturbations-v1.0.gmt",
+    "total_drug_signatures": 542,
+    "signatures_with_overlap": 155,
+    "unique_reverser_compounds": 120,
+    "universe_size": 15376
+  },
+  "signature": {
+    "up_genes": 77,
+    "down_genes": 64,
+    "up_genes_in_lincs": 25,
+    "down_genes_in_lincs": 25
+  },
+  "results": {
+    "total_ranked_compounds": 559,
+    "clinically_annotated": 182,
+    "launched_drugs": 111,
+    "phase3_drugs": 19,
+    "phase2_drugs": 19,
+    "phase1_drugs": 6,
+    "top_5_compounds": [
+      {
+        "compound_name": "BRD-K71328603",
+        "reversal_score": 4.710113122475679,
+        "clinical_phase": NaN
+      },
+      {
+        "compound_name": "Fenretinide",
+        "reversal_score": 4.488327464782515,
+        "clinical_phase": "Phase 3"
+      },
+      {
+        "compound_name": "Wortmannin",
+        "reversal_score": 4.049669166127982,
+        "clinical_phase": "Preclinical"
+      },
+      {
+        "compound_name": "ethyl 6-(2,3-dihydro-1H-indol-1-ylmethyl)-4-(3-nitrophenyl)-2-oxo-1,2,3,4-tetrahydro-5-pyrimidinecarboxylate",
+        "reversal_score": 3.005397557297513,
+        "clinical_phase": NaN
+      },
+      {
+        "compound_name": "Phenoxazine",
+        "reversal_score": 2.483435297424942,
+        "clinical_phase": NaN
+      }
+    ]
+  },
+  "scoring": {
+    "method": "composite_zscore",
+    "weights": {
+      "promote_muscle": 0.5,
+      "anti_mimic": 0.3,
+      "gmt_evidence": 0.2
+    },
+    "note": "Score combines: (1) iLINCS z-score for concordance with anti-atrophy genes, (2) inverse of iLINCS z-score for concordance with atrophy genes (anti-mimic), (3) -log10(p) from local GMT hypergeometric reversal test"
+  },
+  "caveats": [
+    "SigCom LINCS data API was unavailable (503); used iLINCS API + local GMT fallback",
+    "iLINCS geneList mode returns only concordant (positive) z-scores; reversal inferred from differential query strategy",
+    "L1000 covers ~10K landmark genes; many signature genes (mitochondrial, lncRNAs) not measured",
+    "No muscle cell lines in L1000; results from cancer/other cell lines may not translate directly"
+  ]
+}

@@ -1,0 +1,6 @@
+rev_overlap_up_vs_atrophy_down,rev_overlap_dn_vs_atrophy_up,mim_overlap_up_vs_atrophy_up,mim_overlap_dn_vs_atrophy_down,p_rev_up,p_rev_dn,p_mim_up,p_mim_dn,rev_combined_p,mim_combined_p,rev_score,mim_score,net_reversal_score,rev_genes_up,rev_genes_dn,mim_genes_up,mim_genes_dn,compound,drug_id,up_signature,dn_signature,n_up_genes,n_dn_genes,n_signatures,status,mean_net_reversal,max_net_reversal,min_net_reversal,median_net_reversal
+0.0,0.0,0.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,-0.0,-0.0,0.0,,,,,Resveratrol,drug:3467,Resveratrol-up,Resveratrol-dn,359.0,241.0,1,,,,,
+1.0,1.0,1.0,0.0,0.3810370879284494,0.3932402195439852,0.3810370879284494,1.0,0.43426268019738323,0.38103708792844937,0.3622474915697466,0.4190327505743529,-0.05678525900460629,RASL10B,FAT1,RASL11B,,Creatine,drug:3205,Creatine-up,Creatine-dn,292.0,304.0,1,,,,,
+0.0,0.0,1.0,0.0,1.0,1.0,0.3484120324824907,1.0,1.0,0.34841203248249075,-0.0,0.45790685495451794,-0.45790685495451794,,,KCNK1,,Nicotinamide riboside,drug:3468,Nicotinamide riboside-up,Nicotinamide riboside-dn,261.0,339.0,1,,,,,
+,,,,,,,,,,,,,,,,,HMB,,,,,,0,NO_LINCS_SIGNATURE,,,,
+0.0,0.0,0.0,2.0,1.0,1.0,1.0,0.10179298500933864,1.0,0.10179298500933869,-0.0,0.9922821500612301,-0.9922821500612301,,,,LMCD1|MYL3,CoQ10,drug:3456,Coenzyme q10-up,Coenzyme q10-dn,260.0,334.0,1,,,,,
