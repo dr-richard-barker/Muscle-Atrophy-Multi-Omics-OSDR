@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "A consensus cross-species catabolic signature of spaceflight-induced muscle atrophy: meta-analysis of NASA OSDR transcriptomics, pathway mapping, and translation to plant-based nutritional countermeasures"
+type: software
+authors:
+  - family-names: Barker
+    given-names: Richard
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+    affiliation: CoSE / Astronaut Health
+keywords:
+  - spaceflight
+  - muscle atrophy
+  - meta-analysis
+  - mitochondrial dysfunction
+  - LINCS L1000
+  - nutritional countermeasures
+  - vegan protein
+  - leucine threshold
+  - NASA OSDR
+license: MIT
+repository-code: "https://github.com/dr-richard-barker/Muscle-Atrophy-Multi-Omics-OSDR"
+version: "1.0.0"
+date-released: "2026-08-10"
+preferred-citation:
+  type: article
+  title: "A consensus cross-species catabolic signature of spaceflight-induced muscle atrophy: meta-analysis of NASA OSDR transcriptomics, pathway mapping, and translation to plant-based nutritional countermeasures"
+  authors:
+    - family-names: Barker
+      given-names: Richard
+  journal: "npj Microgravity"
+  year: 2026

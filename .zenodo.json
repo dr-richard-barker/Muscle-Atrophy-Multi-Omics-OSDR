@@ -1,0 +1,24 @@
+{
+  "title": "A consensus cross-species catabolic signature of spaceflight-induced muscle atrophy: meta-analysis of NASA OSDR transcriptomics, pathway mapping, and translation to plant-based nutritional countermeasures",
+  "upload_type": "software",
+  "description": "<p>This repository hosts the data and analysis pipeline for re-deriving a consensus cross-species catabolic signature of spaceflight-induced muscle atrophy and translating these findings into evidence-based countermeasures. We integrate rodent and human spaceflight datasets from the NASA Open Science Data Repository (OSDR), perform connectivity mapping using the LINCS L1000 database to identify counter-catabolic compounds, validate candidate nutraceuticals via molecular docking, and design optimized plant-based meal plans to meet muscle protein synthesis (MPS) thresholds.</p><p>Includes the full results tables, SVG/PNG figures, R/Python plans, molecular docking coordinates, and draft manuscript. All code is MIT-licensed; data and figures are CC-BY-4.0.</p>",
+  "creators": [
+    {
+      "name": "Barker, Richard",
+      "affiliation": "CoSE / Astronaut Health"
+    }
+  ],
+  "license": "MIT",
+  "access_right": "open",
+  "keywords": [
+    "spaceflight",
+    "muscle atrophy",
+    "meta-analysis",
+    "mitochondrial dysfunction",
+    "LINCS L1000",
+    "nutritional countermeasures",
+    "vegan protein",
+    "leucine threshold",
+    "NASA OSDR"
+  ]
+}

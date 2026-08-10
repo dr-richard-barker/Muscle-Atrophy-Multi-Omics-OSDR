@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Home · Muscle Atrophy Countermeasures</title>
+<meta name="description" content="Cross-species meta-analysis of spaceflight skeletal muscle atrophy transcriptomics and translation to plant-based countermeasures. FAIR data and code.">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="https://dr-richard-barker.github.io/Plant_response_to_radiation/cose/cose-theme.css">
+</head><body data-site-id="Muscle-Atrophy-Multi-Omics-OSDR">
+<header class="site"><nav>
+  <span class="brand">💪 Muscle Atrophy Countermeasures</span>
+  <a href="#abstract" style="color:var(--accent)">Abstract</a>
+  <a href="#highlights">Highlights</a>
+  <a href="#figures">Figures</a>
+  <a href="#data">Data &amp; code</a>
+  <a href="https://github.com/dr-richard-barker/Muscle-Atrophy-Multi-Omics-OSDR">GitHub ↗</a>
+</nav></header>
+<main>
+<section class="hero">
+  <h1>Consensus spaceflight muscle atrophy &amp; translation to plant-based countermeasures</h1>
+  <p class="lede">A cross-species meta-analysis of NASA OSDR transcriptomics, pathway mapping, and translation to optimized vegan protein combinations meeting the leucine and protein thresholds for muscle protein synthesis.</p>
+  <div class="badges">
+    <span class="badge">CC-BY-4.0</span><span class="badge">FAIR Data</span>
+    <span class="badge">R &amp; Python</span><span class="badge">NASA OSDR</span>
+    <span class="badge">LINCS L1000</span><span class="badge">Molecular Docking</span>
+  </div>
+  <div class="btnrow">
+    <a class="btn primary" href="https://github.com/dr-richard-barker/Muscle-Atrophy-Multi-Omics-OSDR/blob/main/manuscript/manuscript_npj_microgravity.md">Read the manuscript →</a>
+    <a class="btn" href="#figures">Figures</a>
+    <a class="btn" href="https://github.com/dr-richard-barker/Muscle-Atrophy-Multi-Omics-OSDR/tree/main/tables">Results tables</a>
+    <a class="btn" href="https://github.com/dr-richard-barker/Muscle-Atrophy-Multi-Omics-OSDR">Code &amp; data (GitHub)</a>
+  </div>
+  <p class="lede"><b>Headline:</b> A 141-gene cross-species spaceflight atrophy signature, dominated by mitochondrial ETC genes, is reversed by HMB, CoQ10, creatine, vitamin D3, and resveratrol. Plant-based countermeasure optimization identifies pea and soy isolates as optimal leucine sources.</p>
+</section>
+
+<h2 id="abstract">Abstract</h2>
+<div class="content"><p>Spaceflight-induced muscle atrophy remains a principal barrier to long-duration space exploration, and its molecular drivers are incompletely translated into actionable countermeasures. We performed a cross-species random-effects meta-analysis of 10 transcriptomic datasets from the NASA Open Science Data Repository (OSDR), encompassing rodent spaceflight (OSD-21, OSD-111, OSD-135, OSD-401), human cell culture spaceflight (OSD-684), human astronaut cfRNA (OSD-530, GSE213808), Inspiration4 crew blood transcriptomics (OSD-569, OSD-571), and ground-based bed rest analogs (OSD-370). After mapping all genes to human orthologs, we derived a consensus catabolic signature of 141 differentially expressed genes (77 up-regulated, 64 down-regulated; |log2FC| > 0.25, adjusted p < 0.05) from 32,770 tested genes. The signature was dominated by mitochondrial electron transport chain (ETC) genes (MT-ND1 through MT-ND6, MT-CO2, MT-CYB, MT-ATP8; log2FC +1.23 to +1.59) and included the master mitochondrial biogenesis regulator PPARGC1A/PGC-1α (log2FC = −0.51, p_adj = 0.092) among down-regulated genes. Gene set enrichment analysis across 6,877 pathways revealed nominal enrichment of mitochondrial NADH-to-ubiquinone electron transport (NES = +1.45, p = 0.002) and mitochondrial translation (NES = +1.34, p = 0.011). Connectivity mapping against LINCS L1000 perturbation signatures (559 compounds ranked, 182 clinically annotated) and a curated database of 31 nutritional supplements identified HMB, CoQ10, creatine, vitamin D3, and resveratrol as top counter-catabolic candidates. Nutritional translation using published amino acid composition data for 41 vegan protein sources identified pea protein isolate (leucine 6.50 g/100 g, MPS score 2.25) and soy protein isolate (leucine 6.60 g/100 g, MPS score 2.11) as optimal plant-based protein sources for meeting the 2.5 g leucine per meal threshold for muscle protein synthesis activation. Optimized meal combinations achieved >3.2 g leucine and >39 g protein per serving. These results provide a reproducible, data-driven framework linking spaceflight transcriptomics to evidence-based nutritional countermeasures applicable to both astronaut health and terrestrial disuse atrophy.</p><hr /></div>
+
+<h2 id="highlights">Highlights</h2>
+<div class="cards">
+  <div class="card"><h3>141 Atrophy Genes</h3>
+    <p>Consensus signature mapped across 10 studies spanning human crew, rodent flights, and bed rest analogs.</p></div>
+  <div class="card"><h3>Mitochondrial ETC Up</h3>
+    <p>Up-regulation of respiratory complex genes ND1-ND6, CO2, CYB, ATP8; down-regulation of PGC-1α.</p></div>
+  <div class="card"><h3>Connectivity Screen</h3>
+    <p>Drug reversal analysis nominates clinically-backed HMB, CoQ10, creatine, vitamin D3, and resveratrol.</p></div>
+  <div class="card"><h3>Vegan Leucine Benchmark</h3>
+    <p>Optimal plant-based formulations using pea/soy isolates to reach the critical 2.5g leucine threshold.</p></div>
+</div>
+
+<h2 id="figures">Selected figures</h2>
+<div class="gallery">
+  <figure><a href="https://github.com/dr-richard-barker/Muscle-Atrophy-Multi-Omics-OSDR/tree/main/figures"><img src="assets/figures/fig1_volcano_meta_analysis.png" alt="Volcano plot of cross-species muscle atrophy meta-analysis."></a><figcaption>Figure 1 — Volcano plot of the consensus meta-analysis, showing key mitochondrial and catabolic markers.</figcaption></figure>
+  <figure><a href="https://github.com/dr-richard-barker/Muscle-Atrophy-Multi-Omics-OSDR/tree/main/figures"><img src="assets/figures/fig3_gsea_dotplot.png" alt="Pathway GSEA dotplot for muscle atrophy transcriptomics."></a><figcaption>Figure 3 — Normalized enrichment scores (NES) for top GSEA terms, illustrating mitochondrial dysfunction.</figcaption></figure>
+  <figure><a href="https://github.com/dr-richard-barker/Muscle-Atrophy-Multi-Omics-OSDR/tree/main/figures"><img src="assets/figures/fig6_vegan_leucine.png" alt="Leucine density of vegan protein sources."></a><figcaption>Figure 6 — Leucine content per 100g across 41 plant-based sources, benchmarking soy/pea isolates.</figcaption></figure>
+  <figure><a href="https://github.com/dr-richard-barker/Muscle-Atrophy-Multi-Omics-OSDR/tree/main/figures"><img src="assets/figures/fig10_vegan_vs_animal_comparison.png" alt="Vegan vs animal protein benchmark."></a><figcaption>Figure 10 — Head-to-head quality, caloric efficiency, and leucine delivery benchmark between plant and animal proteins.</figcaption></figure>
+</div>
+
+<h2 id="data">Data &amp; code</h2>
+<div class="content"><ul>
+  <li><b>Manuscript:</b> <a href="https://github.com/dr-richard-barker/Muscle-Atrophy-Multi-Omics-OSDR/blob/main/manuscript/manuscript_npj_microgravity.md">Markdown Draft</a>
+      · Final COUNTERMEASURES <a href="https://github.com/dr-richard-barker/Muscle-Atrophy-Multi-Omics-OSDR/blob/main/manuscript/report_muscle_atrophy_countermeasures.pdf">PDF Report</a></li>
+  <li><b>Result tables:</b> <a href="https://github.com/dr-richard-barker/Muscle-Atrophy-Multi-Omics-OSDR/tree/main/tables"><code>tables/</code></a>
+      (Consensus signatures, supplement docking results, amino acid database, and optimized meal combinations)</li>
+  <li><b>Figures:</b> <a href="https://github.com/dr-richard-barker/Muscle-Atrophy-Multi-Omics-OSDR/tree/main/figures"><code>figures/</code></a> (Volcano plots, GSEA dotplots, amino acid heatmaps, and benchmarking profiles)</li>
+  <li><b>In-silico Validation:</b> <a href="https://github.com/dr-richard-barker/Muscle-Atrophy-Multi-Omics-OSDR/tree/main/validation"><code>validation/</code></a>
+      (AutoDock Vina molecular docking results and the C2C12 wet-lab validation protocol)</li>
+</ul>
+<p class="note">Independent research. Not affiliated with or endorsed by NASA or JAXA.
+Reference data (NASA OSDR, LINCS L1000) remain subject to their own terms; cite the original accessions.</p></div>
+</main>
+<footer class="site">
+  Muscle Atrophy Countermeasures — spaceflight muscle wasting &amp; plant-based nutritional design ·
+  FAIR data &amp; code ·
+  <a href="https://github.com/dr-richard-barker/Muscle-Atrophy-Multi-Omics-OSDR">GitHub</a>
+</footer>
+<script src="https://dr-richard-barker.github.io/Plant_response_to_radiation/cose/sites.js"></script>
+<script src="https://dr-richard-barker.github.io/Plant_response_to_radiation/cose/theme.js"></script>
+</body></html>
