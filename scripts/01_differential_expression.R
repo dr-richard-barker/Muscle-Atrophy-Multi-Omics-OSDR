@@ -32,8 +32,11 @@ save_de <- function(gene, log2FC, pvalue, padj, organism, accession, contrast, f
 # raw column turns every negative (down-regulated) value into NaN, which is
 # what the OSD-530 and GSE213808 tables used to contain. Convert the
 # magnitude and keep the sign, and stop if a value breaks the convention.
-# This does not check which group is the numerator; confirm that from the
-# group means in the same file.
+# Direction: an "A vs B" fold change is B relative to A. Checked on both
+# source files against their group means: the sign agrees with B/A for
+# 79-97% of expressed genes in all seven comparisons, and for every
+# FDR < 0.05 gene. So "Pre vs Flight1" is Flight1/Pre, and "MG vs GC" is
+# GC/MG, which must be negated to give flight (MG) relative to ground (GC).
 edge_fc_to_log2 <- function(fc) {
   fc <- as.numeric(fc)
   bad <- !is.na(fc) & abs(fc) < 1
@@ -296,7 +299,8 @@ pval_col <- cols_geo[grepl(comp, cols_geo) & grepl(" - P-value$", cols_geo) & !g
 fc_col <- cols_geo[grepl(comp, cols_geo) & grepl("Fold change$", cols_geo)]
 fdr_col <- cols_geo[grepl(comp, cols_geo) & grepl("FDR p-value correction$", cols_geo)]
 if (length(pval_col) > 0) {
-  save_de(df_geo[[1]], edge_fc_to_log2(df_geo[[fc_col[1]]]),
+  # "MG vs GC" is GC relative to MG; negate for MG (flight) vs GC (ground)
+  save_de(df_geo[[1]], -edge_fc_to_log2(df_geo[[fc_col[1]]]),
           as.numeric(df_geo[[pval_col[1]]]), as.numeric(df_geo[[fdr_col[1]]]),
           "Mus musculus", "GSE213808", "SpaceFlight_vs_GroundControl",
           "GSE213808_DE_SpaceFlight_vs_GroundControl.csv")
