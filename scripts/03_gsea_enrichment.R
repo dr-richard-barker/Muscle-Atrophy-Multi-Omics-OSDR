@@ -24,7 +24,8 @@ dir.create(figures_dir, showWarnings = FALSE, recursive = TRUE)
 cat("=== Loading ranked gene list ===\n")
 ranked <- read.csv(file.path(signature_dir, "ranked_gene_list.csv"), stringsAsFactors = FALSE)
 ranked <- ranked[!is.na(ranked$gene) & ranked$gene != "" & !duplicated(ranked$gene), ]
-ranks <- ranked$log2FC
+if (!"z" %in% colnames(ranked)) stop("ranked_gene_list.csv has no z column; re-run 02_meta_analysis.R")
+ranks <- ranked$z
 names(ranks) <- ranked$gene
 ranks <- sort(ranks, decreasing = TRUE)
 cat(sprintf("  %d genes in ranked list\n", length(ranks)))
