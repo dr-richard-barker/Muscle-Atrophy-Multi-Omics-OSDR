@@ -67,7 +67,7 @@ fgsea_res <- fgsea(pathways = all_sets, stats = ranks, minSize = 10, maxSize = 5
 fgsea_res <- as.data.frame(fgsea_res)
 fgsea_res <- fgsea_res[order(fgsea_res$pval), ]
 cat(sprintf("  GSEA complete: %d pathways tested, %d significant (padj<0.05)\n",
-            nrow(fgsea_res), sum(fgsea_res$padj < 0.05)))
+            nrow(fgsea_res), sum(fgsea_res$padj < 0.05, na.rm = TRUE)))
 
 # Save full results
 fgsea_res$leadingEdge <- sapply(fgsea_res$leadingEdge, function(x) paste(unlist(x), collapse=","))
@@ -92,7 +92,7 @@ key_patterns <- c(
 )
 
 key_res <- fgsea_res[grepl(paste(key_patterns, collapse = "|"), fgsea_res$pathway, ignore.case = TRUE), ]
-key_res_sig <- key_res[key_res$padj < 0.1, ]
+key_res_sig <- key_res[which(key_res$padj < 0.1), ]
 
 cat(sprintf("\n  Key pathways (padj<0.1): %d\n", nrow(key_res_sig)))
 if (nrow(key_res_sig) > 0) {
@@ -157,7 +157,7 @@ cat("\n=== Saving results ===\n")
 write.csv(hallmark_res, file.path(results_dir, "gsea_hallmark_results.csv"), row.names = FALSE)
 
 # Save significant GSEA results
-sig_gsea <- fgsea_res[fgsea_res$padj < 0.05, ]
+sig_gsea <- fgsea_res[which(fgsea_res$padj < 0.05), ]
 write.csv(sig_gsea, file.path(results_dir, "gsea_significant_pathways.csv"), row.names = FALSE)
 cat(sprintf("  Significant pathways (padj<0.05): %d\n", nrow(sig_gsea)))
 
