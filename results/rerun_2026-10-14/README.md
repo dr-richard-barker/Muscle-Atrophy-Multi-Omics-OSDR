@@ -113,6 +113,44 @@ genes land under the `MT-` symbols, so each combines two studies and its log2FC 
 halves (+0.54 to +0.70). These nominal results therefore rest on one dataset and on how
 the annotation version splits the mitochondrial genes between two symbols.
 
+## GSEA ranked by meta-analysis z (`ranked_by_z/`)
+
+The runs above rank genes by raw combined log2FC (the scripts as they were). In
+`ranked_by_z/`, `scripts/02_meta_analysis.R` instead ranks by combined log2FC /
+combined SE, the meta-analysis z-score, and `scripts/03_gsea_enrichment.R` uses that
+`z` column. Each study's SE is |log2FC| / z(p), so a single-study gene is ranked by its
+p-value rather than its fold change. Everything else is unchanged: the meta-analysis
+tables and signatures from these runs are byte-identical to `meta_control/` and
+`meta_fixed/`, and the ranked lists have the same genes (29,579 and 33,003).
+
+| | Pathways tested | padj < 0.05 | Up (NES > 0) | Down (NES < 0) | Hallmark padj < 0.05 |
+|---|---|---|---|---|---|
+| `ranked_by_z/control` | 6,877 | 192 | 162 | 30 | 5 |
+| `ranked_by_z/fixed` | 6,881 | 269 | 241 | 28 | 5 |
+
+- 180 pathways are significant in both runs, 12 only in control and 89 only in fixed.
+  No p-value is NA in either run.
+- The significant pathways rest on multi-study genes. In no significant pathway are more
+  than 25% of the leading-edge genes single-study (median 0% in both runs). The most
+  frequent leading-edge genes are proteasome subunits (PSMA, PSMB, PSMC, PSMD), mostly
+  supported by 8–10 studies.
+- Up: cell cycle and mitosis, RNA splicing, ribosome biogenesis, nuclear transport, and
+  proteasome-dominated sets (REACTOME_REGULATION_OF_ORNITHINE_DECARBOXYLASE_ODC, padj
+  0.017 control / 0.025 fixed; KEGG_PROTEASOME, padj 0.12 / 0.058).
+- Down, in both runs: HALLMARK_HEME_METABOLISM (padj 0.017 / 0.025), oxygen and gas
+  transport, GPCR ligand binding and keratinization. The hemoglobin genes were already
+  negative in `tables/` (e.g. HBB −0.22, HBM −0.44), so this direction does not come
+  from the fix.
+- Hallmark padj < 0.05: MYC_TARGETS_V1, HEME_METABOLISM, G2M_CHECKPOINT,
+  MITOTIC_SPINDLE in both; ALLOGRAFT_REJECTION in control, E2F_TARGETS in fixed.
+- The mitochondrial pathways in the table above reverse sign and are not significant:
+  NADH to ubiquinone −0.74 / −0.76, mitochondrial translation −1.22 / −1.00, complex I
+  biogenesis −0.94 / −0.98 (NES, control / fixed; all padj > 0.5).
+
+Preranked GSEA permutes gene labels, which assumes genes are independent. Co-regulated
+genes in overlapping GO sets make it anti-conservative, so these padj values are better
+read as a ranking of pathways than as calibrated error rates.
+
 ## Reproducing
 
 1. Put the two input files above in one folder.
