@@ -27,6 +27,23 @@ save_de <- function(gene, log2FC, pvalue, padj, organism, accession, contrast, f
               filename, nrow(d), sum(d$padj < 0.05, na.rm = TRUE)))
 }
 
+# Helper: EDGE test "Fold change" columns are signed, not ratios: >= 1 for
+# higher expression, <= -1 for lower, never between -1 and 1. log2() of the
+# raw column turns every negative (down-regulated) value into NaN, which is
+# what the OSD-530 and GSE213808 tables used to contain. Convert the
+# magnitude and keep the sign, and stop if a value breaks the convention.
+# This does not check which group is the numerator; confirm that from the
+# group means in the same file.
+edge_fc_to_log2 <- function(fc) {
+  fc <- as.numeric(fc)
+  bad <- !is.na(fc) & abs(fc) < 1
+  if (any(bad)) {
+    stop(sprintf("%d EDGE fold changes lie strictly between -1 and 1; not the signed convention",
+                 sum(bad)))
+  }
+  sign(fc) * log2(abs(fc))
+}
+
 # ============================================================
 # OSD-401: Mouse RNA-seq, SpaceX-11/RR-5
 # Pre-computed DE file with Space Flight vs Ground Control contrasts
@@ -234,7 +251,7 @@ for (comp in flight_comparisons) {
   fdr_col <- cols530[grepl(comp, cols530) & grepl("FDR p-value correction$", cols530)]
   if (length(pval_col) > 0 && length(fc_col) > 0) {
     de_list_530[[comp]] <- data.frame(
-      gene = df530[[1]], log2FC = log2(as.numeric(df530[[fc_col[1]]])),
+      gene = df530[[1]], log2FC = edge_fc_to_log2(df530[[fc_col[1]]]),
       pvalue = as.numeric(df530[[pval_col[1]]]), padj = as.numeric(df530[[fdr_col[1]]]),
       stringsAsFactors = FALSE
     )
@@ -279,7 +296,7 @@ pval_col <- cols_geo[grepl(comp, cols_geo) & grepl(" - P-value$", cols_geo) & !g
 fc_col <- cols_geo[grepl(comp, cols_geo) & grepl("Fold change$", cols_geo)]
 fdr_col <- cols_geo[grepl(comp, cols_geo) & grepl("FDR p-value correction$", cols_geo)]
 if (length(pval_col) > 0) {
-  save_de(df_geo[[1]], log2(as.numeric(df_geo[[fc_col[1]]])),
+  save_de(df_geo[[1]], edge_fc_to_log2(df_geo[[fc_col[1]]]),
           as.numeric(df_geo[[pval_col[1]]]), as.numeric(df_geo[[fdr_col[1]]]),
           "Mus musculus", "GSE213808", "SpaceFlight_vs_GroundControl",
           "GSE213808_DE_SpaceFlight_vs_GroundControl.csv")
