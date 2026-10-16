@@ -42,7 +42,7 @@ Transcriptomic datasets were retrieved from the NASA OSDR S3 bucket (`nasa-osdr.
 
 | Dataset | Platform | Organism | Tissue/Source | Condition | Contrast | Genes tested | DE genes (p_adj < 0.05) |
 |---------|----------|----------|---------------|-----------|----------|-------------|------------------------|
-| OSD-21 | Microarray | Mouse (STS-135) | Gastrocnemius | Spaceflight | Flight vs Ground | 12,770 | 112 |
+| OSD-21 | Microarray | Mouse (STS-108) | Gastrocnemius | Spaceflight | Flight vs Ground | 12,770 | 112 |
 | OSD-111 | Microarray | Mouse (Bion-M1) | EDL/Soleus | Spaceflight | Flight vs Ground | 12,770 | 54 |
 | OSD-135 | Microarray | Mouse (Bion-M1) | Longissimus dorsi | Spaceflight | Flight vs Ground | 12,770 | 1,377 |
 | OSD-401 | RNA-seq | Mouse (SpaceX-11) | Gastrocnemius | Spaceflight | Flight vs Ground | 22,161 | 359 |
@@ -216,7 +216,7 @@ The down-regulation of PPARGC1A/PGC-1α (log2FC = −0.51, p_adj = 0.092), while
 
 ### Atrogene heterogeneity
 
-The canonical atrophy E3 ligases FBXO32/Atrogin-1 and TRIM63/MuRF1 showed the expected up-regulation direction but with high heterogeneity (I² > 86%) and non-significant adjusted p-values. This is consistent with prior cross-species meta-analyses of OSDR data that found limited overlap in differential gene expression between mouse and human under altered gravity [12]. The variability likely reflects differences in tissue type (gastrocnemius vs. EDL vs. blood cfRNA vs. tissue chip), species (mouse vs. human), mission duration (STS-135 at 13 days vs. Bion-M1 at 30 days vs. Inspiration4 at 3 days), and disuse model (spaceflight vs. bed rest). FBXO32 was up-regulated in 8 of 10 datasets (log2FC = +0.30), and FOXO3 was up-regulated in 6 of 10 (log2FC = +0.22), supporting the involvement of the FoxO-atrogene axis despite the lack of statistical significance after multiple testing correction.
+The canonical atrophy E3 ligases FBXO32/Atrogin-1 and TRIM63/MuRF1 showed the expected up-regulation direction but with high heterogeneity (I² > 86%) and non-significant adjusted p-values. This is consistent with prior cross-species meta-analyses of OSDR data that found limited overlap in differential gene expression between mouse and human under altered gravity [12]. The variability likely reflects differences in tissue type (gastrocnemius vs. EDL vs. blood cfRNA vs. tissue chip), species (mouse vs. human), mission duration (STS-108 at ~12 days vs. Bion-M1 at 30 days vs. Inspiration4 at 3 days), and disuse model (spaceflight vs. bed rest). FBXO32 was up-regulated in 8 of 10 datasets (log2FC = +0.30), and FOXO3 was up-regulated in 6 of 10 (log2FC = +0.22), supporting the involvement of the FoxO-atrogene axis despite the lack of statistical significance after multiple testing correction.
 
 ### From signature to countermeasures
 
@@ -330,21 +330,21 @@ We present a reproducible pipeline integrating 10 spaceflight and analog transcr
 
 [1] Rittweger J, Albracht K, Flück M, et al. Sarcolab pilot study into skeletal muscle's adaptation to long-term spaceflight. *npj Microgravity*. 2018;4:18. doi:10.1038/s41526-018-0052-1
 
-[2] Qaisar R, Karim A, Elmoselhi A. Muscle unloading: A comparison between spaceflight and ground-based models. *Acta Physiologica*. 2019;227(4):e13431. doi:10.1111/apha.13431
+[2] Qaisar R, Karim A, Elmoselhi A. Muscle unloading: A comparison between spaceflight and ground-based models. *Acta Physiologica*. 2020;228(3):e13431. doi:10.1111/apha.13431
 
 [3] Peris-Moreno D, Cussonneau L, Combaret L, Polge C, Taillandier D. Ubiquitin Ligases at the Heart of Skeletal Muscle Atrophy Control. *Molecules*. 2021;26(2):407. doi:10.3390/molecules26020407
 
 [4] Peris-Moreno D, Taillandier D, Polge C. MuRF1/TRIM63, Master Regulator of Muscle Mass. *Int J Mol Sci*. 2020;21(18):6663. doi:10.3390/ijms21186663
 
-[5] Ji L, Yeo D. Mitochondrial dysregulation and muscle disuse atrophy. *F1000Research*. 2019;8:19139. doi:10.12688/f1000research.19139.1
+[5] Ji L, Yeo D. Mitochondrial dysregulation and muscle disuse atrophy. *F1000Research*. 2019;8:1621. doi:10.12688/f1000research.19139.1
 
-[6] Kong S, Cai B, Nie Q. PGC-1α affects skeletal muscle and adipose tissue development by regulating mitochondrial biogenesis. *Mol Genet Genomics*. 2022;297(3):621–635. doi:10.1007/s00438-022-01878-2
+[6] Kong S, Cai B, Nie Q. PGC-1α affects skeletal muscle and adipose tissue development by regulating mitochondrial biogenesis. *Mol Genet Genomics*. 2022;297(3):621–633. doi:10.1007/s00438-022-01878-2
 
 [7] Cahill T, Cope H, Bass J, et al. Mammalian and Invertebrate Models as Complementary Tools for Gaining Mechanistic Insight on Muscle Responses to Spaceflight. *Int J Mol Sci*. 2021;22(17):9470. doi:10.3390/ijms22179470
 
-[8] Murgia M, Ciciliot S, Nagaraj N, et al. Signatures of muscle disuse in spaceflight and bed rest revealed by single muscle fiber proteomics. *PNAS Nexus*. 2022;1(4):pgac086. doi:10.1093/pnasnexus/pgac086
+[8] Murgia M, Ciciliot S, Nagaraj N, et al. Signatures of muscle disuse in spaceflight and bed rest revealed by single muscle fiber proteomics. *PNAS Nexus*. 2022;1(3):pgac086. doi:10.1093/pnasnexus/pgac086
 
-[9] Suetta C, Frandsen U, Jensen L, et al. Aging Affects the Transcriptional Regulation of Human Skeletal Muscle Disuse Atrophy. *PLoS ONE*. 2012;7(5):e51238. doi:10.1371/journal.pone.0051238
+[9] Suetta C, Frandsen U, Jensen L, et al. Aging Affects the Transcriptional Regulation of Human Skeletal Muscle Disuse Atrophy. *PLoS ONE*. 2012;7(12):e51238. doi:10.1371/journal.pone.0051238
 
 [10] Gebre S, Scott RT, Saravia-Butler A, Lopez DK, Sanders L, Costes SV. NASA open science data repository: open science for life in space. *Nucleic Acids Research*. 2024;gkae1116. doi:10.1093/nar/gkae1116
 
@@ -356,35 +356,35 @@ We present a reproducible pipeline integrating 10 spaceflight and analog transcr
 
 [14] Zhao Y, Chen X, Chen J, Qi X. Decoding Connectivity Map-based drug repurposing for oncotherapy. *Briefings in Bioinformatics*. 2023;24(3):bbad142. doi:10.1093/bib/bbad142
 
-[15] Parafati M, Giza S, Shenoy T, et al. Human skeletal muscle tissue chip autonomous payload reveals changes in fiber type and metabolic gene expression due to spaceflight. *npj Microgravity*. 2023;9:22. doi:10.1038/s41526-023-00322-y
+[15] Parafati M, Giza S, Shenoy T, et al. Human skeletal muscle tissue chip autonomous payload reveals changes in fiber type and metabolic gene expression due to spaceflight. *npj Microgravity*. 2023;9:77. doi:10.1038/s41526-023-00322-y
 
-[16] Vitry G, Finch RH, McStay GP, et al. Muscle atrophy phenotype gene expression during spaceflight is linked to a metabolic crosstalk in both the liver and the muscle in mice. *iScience*. 2022;25(7):105213. doi:10.1016/j.isci.2022.105213
+[16] Vitry G, Finch RH, McStay GP, et al. Muscle atrophy phenotype gene expression during spaceflight is linked to a metabolic crosstalk in both the liver and the muscle in mice. *iScience*. 2022;25(10):105213. doi:10.1016/j.isci.2022.105213
 
 [17] Norton L, Wilson GJ, Layman DK, Moulton CJ, Garlick PJ. Leucine content of dietary proteins is a determinant of postprandial skeletal muscle protein synthesis in adult rats. *Nutrition & Metabolism*. 2012;9:67. doi:10.1186/1743-7075-9-67
 
-[18] Wilkinson K, Koscien CP, Monteyne AJ, Wall BT, Stephens FB. Association of postprandial postexercise muscle protein synthesis rates with dietary leucine: A systematic review. *Physiological Reports*. 2023;11(5):e15775. doi:10.14814/phy2.15775
+[18] Wilkinson K, Koscien CP, Monteyne AJ, Wall BT, Stephens FB. Association of postprandial postexercise muscle protein synthesis rates with dietary leucine: A systematic review. *Physiological Reports*. 2023;11(15):e15775. doi:10.14814/phy2.15775
 
 [19] Matthews JJ, Arentson-Lantz E, Katsanos CS, Moughan PJ, Wolfe RR, Ferrando AA, et al. Muscle Protein Synthesis Response to Whole-Foods and Free-Form Essential Amino Acids: An Exploratory Analysis. *Curr Dev Nutr*. 2025;106608. doi:10.1016/j.cdnut.2025.106608
 
-[20] Pinckaers PJM, Trommelen J, Snijders T, van Loon LJC. The Anabolic Response to Plant-Based Protein Ingestion. *Sports Medicine*. 2021;51:59–69. doi:10.1007/s40279-021-01540-8
+[20] Pinckaers PJM, Trommelen J, Snijders T, van Loon LJC. The Anabolic Response to Plant-Based Protein Ingestion. *Sports Medicine*. 2021;51(Suppl 1):59–74. doi:10.1007/s40279-021-01540-8
 
 [21] Gorissen SHM, Crombag JJR, Senden J, et al. Protein content and amino acid composition of commercially available plant-based protein isolates. *Amino Acids*. 2018;50(12):1685–1695. doi:10.1007/s00726-018-2640-5
 
-[22] Nichele S, Phillips SM, Boaventura BCB. Plant-based food patterns to stimulate muscle protein synthesis and support muscle mass in humans: a narrative review. *Appl Physiol Nutr Metab*. 2022;47(5):460–469. doi:10.1139/apnm-2021-0806
+[22] Nichele S, Phillips SM, Boaventura BCB. Plant-based food patterns to stimulate muscle protein synthesis and support muscle mass in humans: a narrative review. *Appl Physiol Nutr Metab*. 2022;47(7):700–710. doi:10.1139/apnm-2021-0806
 
 [23] Schoenfeld BJ, Aragon AA. How much protein can the body use in a single meal for muscle-building? Implications for daily protein distribution. *J Int Soc Sports Nutr*. 2018;15:10. doi:10.1186/s12970-018-0215-1
 
 [24] Garcia-Medina JS, Sienkiewicz K, Narayanan S, et al. Genome and clonal hematopoiesis stability contrasts with immune, cfDNA, mitochondrial, and telomere length changes during short duration spaceflight. *Precision Clinical Medicine*. 2024;7(1):pbae007. doi:10.1093/pcmedi/pbae007
 
-[25] Chakraborty N, Waning DL, Gautam A, et al. Gene-Metabolite Network Linked to Inhibited Bioenergetics in Association With Spaceflight-Induced Loss of Male Mouse Quadriceps Muscle. *J Bone Miner Res*. 2020;35(12):2304–2316. doi:10.1002/jbmr.4102
+[25] Chakraborty N, Waning DL, Gautam A, et al. Gene-Metabolite Network Linked to Inhibited Bioenergetics in Association With Spaceflight-Induced Loss of Male Mouse Quadriceps Muscle. *J Bone Miner Res*. 2020;35(10):2049–2057. doi:10.1002/jbmr.4102
 
-[26] Girón M, Vílchez JD, Shreeram S, et al. β-Hydroxy-β-Methylbutyrate (HMB) Normalizes Dexamethasone-Induced Autophagy-Lysosomal Pathway in Skeletal Muscle. *PLoS ONE*. 2015;10(3):e0117520. doi:10.1371/journal.pone.0117520
+[26] Girón M, Vílchez JD, Shreeram S, et al. β-Hydroxy-β-Methylbutyrate (HMB) Normalizes Dexamethasone-Induced Autophagy-Lysosomal Pathway in Skeletal Muscle. *PLoS ONE*. 2015;10(2):e0117520. doi:10.1371/journal.pone.0117520
 
-[27] Duan Y, Zheng C, Zhong Y, et al. Beta-hydroxy beta-methyl butyrate decreases muscle protein degradation via increased Akt/FoxO3a signaling and mitochondrial biogenesis in weanling piglets after lipopolysaccharide challenge. *Food Funct*. 2019;10(1):515–527. doi:10.1039/c9fo00769e
+[27] Duan Y, Zheng C, Zhong Y, et al. Beta-hydroxy beta-methyl butyrate decreases muscle protein degradation via increased Akt/FoxO3a signaling and mitochondrial biogenesis in weanling piglets after lipopolysaccharide challenge. *Food Funct*. 2019;10(8):5152–5165. doi:10.1039/c9fo00769e
 
 [28] He X, Li Y, Chen J, Huang Y, Zhou Y, Li Y, Quan J. β-hydroxy-β-methylbutyrate supplementation mitigates muscle atrophy induced by inactivity and protein deprivation. *Biogerontology*. 2025. doi:10.1007/s10522-025-10262-7
 
-[29] Bear DE, Langan A, Dimidi E, Wandrag L, Harridge SDR, Hart N, et al. β-Hydroxy-β-methylbutyrate and its impact on skeletal muscle mass and physical function in clinical practice: a systematic review and meta-analysis. *Am J Clin Nutr*. 2018;108(3):546–556. doi:10.1093/ajcn/nqy373
+[29] Bear DE, Langan A, Dimidi E, Wandrag L, Harridge SDR, Hart N, et al. β-Hydroxy-β-methylbutyrate and its impact on skeletal muscle mass and physical function in clinical practice: a systematic review and meta-analysis. *Am J Clin Nutr*. 2019;109(4):1119–1132. doi:10.1093/ajcn/nqy373
 
 [30] Desai I, Wewege MA, Jones MD, Clifford BK, Pandit A, Kaakoush NO, et al. The Effect of Creatine Supplementation on Resistance Training–Based Changes to Body Composition: A Systematic Review and Meta-analysis. *J Strength Cond Res*. 2024. doi:10.1519/jsc.0000000000004862
 
@@ -392,7 +392,7 @@ We present a reproducible pipeline integrating 10 spaceflight and analog transcr
 
 [32] Holeček M. Beta‐hydroxy‐beta‐methylbutyrate supplementation and skeletal muscle in healthy and muscle‐wasting conditions. *J Cachexia Sarcopenia Muscle*. 2017;8(4):529–541. doi:10.1002/jcsm.12208
 
-[33] Wen W, Chen X, Huang Z, Chen D, Chen H, Luo Y, et al. Resveratrol regulates muscle fiber type conversion via miR-22-3p and AMPK/SIRT1/PGC-1α pathway. *J Nutr Biochem*. 2019;71:108297. doi:10.1016/j.jnutbio.2019.108297
+[33] Wen W, Chen X, Huang Z, Chen D, Chen H, Luo Y, et al. Resveratrol regulates muscle fiber type conversion via miR-22-3p and AMPK/SIRT1/PGC-1α pathway. *J Nutr Biochem*. 2020;77:108297. doi:10.1016/j.jnutbio.2019.108297
 
 [34] Zheng M, Bai Y, Sun X, et al. Resveratrol Reestablishes Mitochondrial Quality Control in Myocardial Ischemia/Reperfusion Injury through Sirt1/Sirt3-Mfn2-Parkin-PGC-1α Pathway. *Molecules*. 2022;27(17):5545. doi:10.3390/molecules27175545
 
@@ -400,7 +400,7 @@ We present a reproducible pipeline integrating 10 spaceflight and analog transcr
 
 [36] Williams CB, Hughes MC, Edgett BA, Scribbans TD, Simpson CA, Perry CGR, et al. An Examination of Resveratrol's Mechanisms of Action in Human Tissue: Impact of a Single Dose In Vivo and Dose Responses in Skeletal Muscle Ex Vivo. *PLoS ONE*. 2014;9(7):e102406. doi:10.1371/journal.pone.0102406
 
-[37] Okada R, Fujita S, Suzuki R, et al. Transcriptome analysis of gravitational effects on mouse skeletal muscles under microgravity and artificial 1 g onboard environment. *Scientific Reports*. 2021;11:88392. doi:10.1038/s41598-021-88392-4
+[37] Okada R, Fujita S, Suzuki R, et al. Transcriptome analysis of gravitational effects on mouse skeletal muscles under microgravity and artificial 1 g onboard environment. *Scientific Reports*. 2021;11:9168. doi:10.1038/s41598-021-88392-4
 
 [38] Vainshtein A. The Interplay Between PGC-1 and Autophagy During Metabolic Alterations in Skeletal Muscle. 2015. hdl.handle.net/10315/30012
 
@@ -408,21 +408,21 @@ We present a reproducible pipeline integrating 10 spaceflight and analog transcr
 
 [40] Dijk F, van Dijk M, Roberts JD, et al. Pea and soy fortified with leucine stimulates muscle protein synthesis comparable to whey in a murine ageing model. *Eur J Nutr*. 2024. doi:10.1007/s00394-024-03506-8
 
-[41] Li K, Desai R, Scott RT, et al. Explainable machine learning identifies multi-omics signatures of muscle response to spaceflight in mice. *npj Microgravity*. 2023;9:337. doi:10.1038/s41526-023-00337-5
+[41] Li K, Desai R, Scott RT, et al. Explainable machine learning identifies multi-omics signatures of muscle response to spaceflight in mice. *npj Microgravity*. 2023;9:90. doi:10.1038/s41526-023-00337-5
 
 [42] Oommen A, Stafford P, Joshi L. Profiling muscle transcriptome in mice exposed to microgravity using gene set enrichment analysis. *npj Microgravity*. 2024. doi:10.1038/s41526-024-00434-z
 
-[43] Malhan D, Yalçın M, Schoenrock B, Blottner D, Relógio A. Skeletal muscle gene expression dysregulation in long-term spaceflights and aging is clock-dependent. *npj Microgravity*. 2023;9:273. doi:10.1038/s41526-023-00273-4
+[43] Malhan D, Yalçın M, Schoenrock B, Blottner D, Relógio A. Skeletal muscle gene expression dysregulation in long-term spaceflights and aging is clock-dependent. *npj Microgravity*. 2023;9:30. doi:10.1038/s41526-023-00273-4
 
-[44] Jones CW, Overbey EG, Lacombe J, et al. Molecular and physiological changes in the SpaceX Inspiration4 civilian crew. *Nature*. 2024;632:720–728. doi:10.1038/s41586-024-07648-x
+[44] Jones CW, Overbey EG, Lacombe J, et al. Molecular and physiological changes in the SpaceX Inspiration4 civilian crew. *Nature*. 2024;632:1155–1164. doi:10.1038/s41586-024-07648-x
 
-[45] Overbey EG, Kim J, Tierney BT, et al. The Space Omics and Medical Atlas (SOMA) and international astronaut biobank. *Nature*. 2024;632:714–719. doi:10.1038/s41586-024-07639-y
+[45] Overbey EG, Kim J, Tierney BT, et al. The Space Omics and Medical Atlas (SOMA) and international astronaut biobank. *Nature*. 2024;632:1145–1154. doi:10.1038/s41586-024-07639-y
 
 [46] Souza A, Alves A, Martinez C, et al. Biomarkers of Skeletal Muscle Atrophy Based on Atrogenes Evaluation: A Systematic Review and Meta-Analysis Study. *Int J Mol Sci*. 2025;26(8):3516. doi:10.3390/ijms26083516
 
 [47] Haberecht-Müller S, Krüger E, Fielitz J. Out of Control: The Role of the Ubiquitin Proteasome System in Skeletal Muscle during Inflammation. *Biomolecules*. 2021;11(9):1327. doi:10.3390/biom11091327
 
-[48] Tagawa R, Watanabe D, Ito K, et al. Dose–response relationship between protein intake and muscle mass increase: a systematic review and meta-analysis of randomized controlled trials. *Nutr Rev*. 2020;78(12):1005–1018. doi:10.1093/nutrit/nuaa104
+[48] Tagawa R, Watanabe D, Ito K, et al. Dose–response relationship between protein intake and muscle mass increase: a systematic review and meta-analysis of randomized controlled trials. *Nutr Rev*. 2021;79(1):66–75. doi:10.1093/nutrit/nuaa104
 
 [49] Schoenfeld BJ, Aragon AA, Krieger J. The effect of protein timing on muscle strength and hypertrophy: a meta-analysis. *J Int Soc Sports Nutr*. 2013;10:53. doi:10.1186/1550-2783-10-53
 
