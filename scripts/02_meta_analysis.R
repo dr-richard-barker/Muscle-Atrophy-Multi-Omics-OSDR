@@ -260,12 +260,20 @@ signature <- rbind(
 )
 write.csv(signature, file.path(signature_dir, "consensus_catabolic_signature.csv"), row.names = FALSE)
 
-ranked_list <- meta_results$combined_log2FC
-names(ranked_list) <- meta_results$gene
-ranked_list <- sort(ranked_list, decreasing = TRUE)
+# Rank by the meta-analysis z-score (combined log2FC / combined SE), not the
+# raw combined log2FC: a raw-fold-change ranking let single-study genes with
+# large but unsupported fold changes take most of the extreme ranks. Genes with
+# no estimate (NA) are dropped, as sort() did before.
+ranked_df <- data.frame(gene = meta_results$gene,
+                        z = meta_results$combined_log2FC / meta_results$combined_se,
+                        log2FC = meta_results$combined_log2FC,
+                        se = meta_results$combined_se,
+                        stringsAsFactors = FALSE)
+ranked_df <- ranked_df[is.finite(ranked_df$z), ]
+ranked_df <- ranked_df[order(ranked_df$z, decreasing = TRUE), ]
+ranked_list <- setNames(ranked_df$z, ranked_df$gene)
 saveRDS(ranked_list, file.path(signature_dir, "ranked_gene_list.rds"))
-write.csv(data.frame(gene = names(ranked_list), log2FC = ranked_list),
-          file.path(signature_dir, "ranked_gene_list.csv"), row.names = FALSE)
+write.csv(ranked_df, file.path(signature_dir, "ranked_gene_list.csv"), row.names = FALSE)
 
 saveRDS(list(up = sig_up$gene, down = sig_down$gene, full = as.data.frame(meta_results)),
         file.path(signature_dir, "catabolic_signature_gene_sets.rds"))
